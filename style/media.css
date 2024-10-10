@@ -72,5 +72,22 @@
         height: 300px;
         object-fit: cover;
     }
+    .oldmen-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 2vw;
+        margin-top: 30px;
+    
+    }
+
+    .listik{
+        position: absolute;
+        bottom: 300px;
+        right: -10px;
+        opacity: 0.5;
+        width: 70px;
+    }
 
 }

@@ -5,7 +5,9 @@ body{
     h2{
         font-size: 28px;
     }
-    .container{width: 98%;}
+    .container{width: 90%; max-width:auto; padding: 0;}
+    
+
     
     .header-top {
         
@@ -125,6 +127,7 @@ body{
     margin-bottom: 0px;
     box-shadow: 0 3px 13px 0 rgba(0, 0, 0, 0.1);
     padding: 10px 15px;
+    width: 100%;
 }
 .special-item img{
     width: 60px;
