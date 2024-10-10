@@ -1,0 +1,192 @@
+@media (max-width:520px){
+body{
+    overflow-x: hidden;
+}
+    h2{
+        font-size: 28px;
+    }
+    .container{width: 98%;}
+    
+    .header-top {
+        
+        padding: 5px 0;
+    }
+    .adres-lict a {
+        
+        font-size: 14px;
+        
+    }
+
+    .adres-header {
+        
+        font-size: 14px;
+        margin-bottom: 0;
+        text-align: center;
+        position: absolute;
+        top: -32px;
+        right: 7px;
+        color: var(--color-oliva);
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: bold;
+    }
+    .fone-time{
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .fone-list {
+       font-size: 14px;
+    }
+
+    .logotip-img {
+        width: 60px;
+    }
+   .logo{
+    width: 100%;
+   
+   }
+
+   .nav-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.fone{
+    position: absolute;
+    top: 10px;
+    right: 7px;
+}
+.fone-list li{
+    padding: 0;
+    
+}
+.header-promo {
+  
+    text-align: center;
+    padding-top: 45vh;
+    position: relative;
+}
+.header-promo h1 {
+    margin-bottom: 1rem;
+    font-size: 24PX;
+}
+.header-promo h2 {
+    margin-bottom: 0.4rem;
+    
+    font-size: 20px;
+}
+.header-promo p {
+    margin-bottom: 0.6rem;
+   font-size: 15px;
+}
+.servis-item{
+    flex: 1 1 90%;
+    margin-bottom: 16px;
+}
+.servis-icone{
+    font-size: 30px;
+    margin-bottom: 18px;
+    color: var(--color-oliva);
+}
+.servis-item h3{
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.oldmen-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2vw;
+    margin-top: 30px;
+
+}
+.listik{
+    position: absolute;
+    bottom: 300px;
+    right: -10px;
+    opacity: 0.5;
+    width: 70px;
+}
+.pal{
+   display: none;
+}
+.special-item{
+ 
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 0px;
+    box-shadow: 0 3px 13px 0 rgba(0, 0, 0, 0.1);
+    padding: 10px 15px;
+}
+.special-item img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    } 
+    .wel{
+        position:absolute;
+        bottom: none;
+        top: -20px;
+        right: 0;
+        opacity: 0.5;
+        width: 15%;
+    }
+    .point-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 10px;
+        margin-top:20px;
+    }
+    .point-item{
+        background: white;
+        padding: 15px 15px 10px 15px;
+        box-shadow: 0 3px 13px 0 rgba(0, 0, 0, 0.1);
+        transform: rotate(0);
+        position: relative;
+    
+    
+    }
+    
+    .point-item:nth-child(2){
+        transform: rotate(0) translateY(0);
+    
+    }
+    .point-item:nth-child(3){
+        transform: rotate(0) translateY(0);
+    }
+    .point-item::after{
+        content:'';
+        background:none;     
+        display: none;
+        position: absolute;
+    
+    }
+    .point-item:nth-child(2)::after{
+        content:'';
+        background:none;     
+        display: none;
+        position: absolute;
+    }
+    .point-item:nth-child(3)::after{
+        content:'';
+        background:none;     
+        display: none;
+        position: absolute;
+    
+    }
+    .point-item img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+}

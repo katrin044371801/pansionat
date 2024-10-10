@@ -1,0 +1,543 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+--color-green: #50735f;
+--color-beg: #f7f0e8;
+--color-pink: #f1e4dc;
+--color-oliva:#778766;
+--color-text:#50735f;
+--color-braun:#513a24;
+
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'), url('./../fonts/Roboto/Roboto-Regular.ttf ') format('truetype');
+    font-weight: normal;
+    font-style: normal;}
+@font-face {
+        font-family: 'Playfair';
+        src: local('Playfair'), url('./../fonts/Playfair_Display_SC/PlayfairDisplaySC-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;}
+
+@font-face {
+            font-family: "Montserrat";
+            src: local('Montserrat'), url('./../fonts/Montserrat_Alternates/MontserratAlternates-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;}
+
+@font-face {
+                font-family: "LibreBaskerville-Regular";
+                src: local('LibreBaskerville-Regular'), url('./../fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;}
+
+@font-face {
+                    font-family: "LibreBaskerville-Italic";
+                    src: local('LibreBaskerville-Italic'), url('./../fonts/Libre_Baskerville/LibreBaskerville-Italic.ttf') format('truetype');
+                    font-weight: normal;
+                    font-style: italic;}
+
+
+@font-face {
+                    font-family: 'Caveat';
+                    src: local('Caveat'), url('./../fonts/Caveat/Caveat-Regular.ttf ') format('truetype');
+                    font-weight: normal;
+                    font-style: normal;}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 10px;
+    }
+
+body{
+    background: var(--color-beg);
+    color:var(--color-braun);
+    font-size: 18px;
+    font-family:Roboto,sans-serif ;
+}
+h2,h3{
+    font-family: "LibreBaskerville-Regular";
+}
+h1{
+    font-family: "Montserrat";
+}
+h2{
+    margin-bottom: 0.5rem;
+    font-family: "LibreBaskerville-Italic";
+    font-style: italic;
+    font-weight: bold;
+    font-size: 38px;
+   
+    
+}
+.resp{
+    width: 100%;
+}
+
+
+.header{
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.7)), url(./../img/house.jpg) no-repeat center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+    /* border: 3px solid red; */
+}
+
+
+.header-promo{
+    color: var(--color-pink);
+    text-align: center;
+   padding-top: 40vh;
+}
+.header-promo h1{
+    margin-bottom: 2rem;
+    font-size: 48PX;
+}
+.header-promo h2{
+    margin-bottom: 0.5rem;
+    font-family: "LibreBaskerville-Italic";
+    font-style: italic;
+    font-weight: normal;
+    font-size: 32px;
+
+}
+.header-promo p{
+    margin-bottom: 0.8rem;
+    color: var(--color-pink);
+    opacity: 0.8;
+}
+.btn{
+    background: transparent;
+    border: 1px solid var(--color-pink);
+    color: var(--color-pink);
+    padding: 8px 20px;
+    border-radius: 20px;
+}
+.btn:hover{
+    background:#77876695;
+    cursor: pointer;
+    transition: 1s;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+
+.header-top{
+    background: #778766ec;
+    padding: 10px 0;
+
+}
+.logotip-img{
+    width: 70px;
+}
+.nav-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-pink);
+}
+.adres-lict{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+.adres-lict a{
+    color: inherit;
+    font-size: 20px;
+    text-decoration: none;
+}
+.adres-header{
+    font-family: "LibreBaskerville-Italic";
+    font-style: italic;
+    font-weight: normal;
+    font-size: 24px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.fone-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+   
+
+}
+.fone-list a{
+    text-decoration: none;
+    color:inherit ;
+   
+}
+.fone-coll:hover{
+    transform: scale(1.2);
+    transition: 1s;
+    box-shadow: inset 0 0 8px 2px rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+
+
+}
+.icon{
+    height: 23px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.fone-coll:hover .icon{
+    transform: rotate(20deg);
+}
+.fone-list li{
+    padding: 5px;
+}
+.fone-coll{
+    font-family: "LibreBaskerville-Italic";
+    font-style: italic;
+    font-weight: normal;
+}
+.menu-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #513a24;
+    list-style: none;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "Montserrat";
+    /* text-transform: uppercase; */
+
+}
+.menu-main a{
+    color: inherit;
+    text-decoration: none;
+}
+.header-nav{
+    background: #f1e4dcc4;
+    padding: 16px 0;
+}
+.menu-main li:hover{
+    transform: scale(1.2);
+    transition: 1s;
+}
+.burger{
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border: 1px solid var(--color-oliva);
+    border-radius: 5px;
+    top: 2px;
+    z-index: 2000;
+    padding: 3px;
+    display: none;
+}
+.burger span{
+    position: relative;
+    display: block;
+    height: 2px;
+    background: var(--color-oliva);
+    top: 49%;
+    border-radius: 10px;
+}
+.burger span::before{
+    content: "";
+    position: absolute;
+    display: block;
+    height: 2px;
+    background: var(--color-oliva);
+    top: -6px;
+    border-radius: 10px;
+    width: 100%;
+}
+.burger span::after{
+    content: "";
+    position: absolute;
+    display: block;
+    height: 2px;
+    background: var(--color-oliva);
+    top: 6px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+
+.trast{
+    background:#7a8b69ee;
+    padding: 50px 0;
+    color: var(--color-pink);
+    position: relative;
+
+}
+.listvite{
+    position: absolute;
+   bottom: 50px;
+    right: -63px;
+    transform: rotate(-90deg) scale(-1,1);
+    opacity: 0.5;
+}
+.trast-text{
+    font-family: "LibreBaskerville-Italic";
+    font-style: italic;
+}
+.about{
+    margin-top: 50px;
+   
+}
+
+.about-inner{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: start;
+    gap: 2vw;
+    flex-wrap: wrap;
+
+}
+
+.about-text{
+    flex: 1 1 600px;
+    position: relative;
+}
+.about-text p{
+    margin-bottom: 20px;
+    color:var(--color-braun)
+}
+.about-foto{
+    flex: 1 1 600px;
+}
+
+.servis{
+    margin-top: 50px;
+}
+.servis h2{
+    margin-bottom: 40px;
+}
+.servis-inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+.servis-item{
+    flex: 1 1 30%;
+    /* border: 1px solid var(--color-oliva); */
+    padding: 16px 20px;
+    transition: 1s ease-in;
+    box-shadow: 0 3px 13px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+
+}
+.servis-icone{
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: var(--color-oliva);
+}
+.servis-item h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.servis-item:hover{
+    transform: scale(1.2);
+    transition: 1s ease-in;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+    background: var(--color-pink);
+    cursor: pointer;
+    
+}
+.oldmen{
+    margin-top: 50px;
+
+}
+.oldmen-inner{
+    position: relative;
+}
+.listik{
+    position: absolute;
+    bottom: 190px;
+    right: -70px;
+    opacity: 0.5;
+}
+.oldmen p{
+    margin-top: 20px;
+}
+
+.oldmen-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2vw;
+    margin-top: 30px;
+
+}
+.oldmen-list img{
+    height: 300px;
+    object-fit: cover;
+}
+.oldmen-item h3{
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.special{
+    padding-top: 50px;
+    
+}
+.special-inner{
+    position: relative;
+}
+.special-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-top: 20px;
+  
+
+}
+.special-item{
+    flex: 1 1 40%;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 3px 13px 0 rgba(0, 0, 0, 0.1);
+    padding: 15px 20px;
+}
+.special-icone{
+   width: 200px;
+   border: 1px solid red;
+    height: 200px;
+}
+
+.special-item img{
+width: 100px;
+height: 100px;
+object-fit: cover;
+} 
+.special-item h3{
+    margin-bottom: 8px;
+}                 
+
+.point{
+    padding: 50px 0;
+}
+.point-inner{
+    position: relative;
+}
+.wel{
+    position:absolute;
+    top: -20px;
+    right: 0;
+    opacity: 0.5;
+}
+.point-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 30px;
+    margin-top: 40px;
+}
+.point-item{
+    background: white;
+    padding: 25px 25px 50px 25px;
+    box-shadow: 0 3px 13px 0 rgba(0, 0, 0, 0.1);
+    transform: rotate(3deg);
+    position: relative;
+
+
+}
+
+.point-item:nth-child(2){
+    transform: rotate(-1deg) translateY(45px);
+
+}
+.point-item:nth-child(3){
+    transform: rotate(-4deg) translateY(20px);
+}
+.point-item::after{
+    content:'';
+    background: url(./../img/pin2.png);
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+    top: -15px;
+    left: 15px;
+    opacity: 0.7;
+    display: block;
+    position: absolute;
+
+}
+.point-item:nth-child(2)::after{
+    content:'';
+    background: url(./../img/pin2.png);
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+    top: -15px;
+    
+    left: 90%;
+    opacity: 0.7;
+    display: block;
+    position: absolute;
+}
+.point-item:nth-child(3)::after{
+    content:'';
+    background: url(./../img/pin2.png);
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+    top:85%;
+    
+    left: 90%;
+    opacity: 0.7;
+
+    display: block;
+    position: absolute;
+
+}
+.point-item img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.point-item h3{
+    height: 50px;
+    overflow: hidden;
+    margin-top: 20px;
+    font-family: 'Caveat';
+    font-size: 30px;
+    text-align: center;
+    line-height: 20px;
+
+}
+.baterfly{
+    position: absolute;
+    bottom: -60px;
+    right: -10px;
+    opacity: 0.5;
+    width: 100px;
+    transform: rotate(-20deg);
+
+
+}
+.pal{
+    position: absolute;
+    bottom: 700px;
+    left: -95px;
+    opacity: 0.5;
+}
+
+
+ 
