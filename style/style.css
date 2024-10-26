@@ -168,6 +168,7 @@ h2{
     font-size: 24px;
     margin-bottom: 8px;
     text-align: center;
+   
 }
 .fone-list{
     list-style: none;
@@ -356,6 +357,80 @@ h2{
     background: var(--color-pink);
     cursor: pointer;
     
+}
+
+.price{
+    background: var(--color-oliva);
+    /* padding: 30px 300px 30px 0; */
+    color: var(--color-pink);
+    max-height: 300px;
+    margin-top: 50px;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+   
+
+}
+.price-1 span{
+    display: block;
+    font-weight: 900;
+    font-family: 'Caveat';
+    font-size: 46px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.star{
+    position: absolute;
+    width: 50px;
+    left: -75px;
+    opacity: 0.5;
+}
+.star2{
+    position: absolute;
+    width: 50px;
+    left: -65px;
+    opacity: 0.5;
+    top: 70px;
+}
+.price-2 span{
+    display: block;
+    font-weight: 900;
+    font-family: 'Caveat';
+    font-size: 46px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.stariki2{
+    width: 300px;
+    position: absolute;
+    /* top: -50px; */
+    right    : 0;
+    bottom:-20px;
+}
+
+.price-inner{
+    display: flex;
+    position: relative;
+    padding-right: 200px;
+    gap: 15px;
+    padding-top: 20px;
+    font-size: 20px;
+    font-family: "Montserrat";
+   
+
+
+}
+.price-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 3px;
+
+}
+.price-1,.price-2{
+    width: 48%;position: relative;
+
 }
 .oldmen{
     margin-top: 50px;
