@@ -1,4 +1,7 @@
 @media (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
     .container{width: 95%;}
     .adres-lict{
         display: none;
@@ -94,7 +97,7 @@
        
         /* padding: 30px 300px 30px 0; */
        
-        max-height: auto;
+        max-height: none;
         margin-top: 30px;
         position:static;
         padding-top: 30px;
@@ -103,14 +106,43 @@
        
     
     }
+    .price-1,.price-2{
+        width: 99%;position: relative;
+        margin-bottom: 30px;
+        text-align: center;
+    
+    }
+    .price-1 span, .price-2 span{
+        display: block;
+        font-weight: 900;
+        font-family: 'Caveat';
+        font-size: 38px;
+        
+        line-height: 28px;
+        text-align: center;
+        width: 200px;
+        margin: 20px auto 10px auto;
+    }
+    .price-header h2{
+        text-align: center;
+        width: 99%;
+    }
+    .stariki2{
+        width: 200px;
+        position:static;
+        margin: 0 auto;
+        display: block;
+        
+    }
     .price-inner{
         display: block;
         position: static;
         padding-right: 10px;
         gap: 15px;
         padding-top: 20px;
-        font-size: 20px;
-        font-family: "Montserrat";
+        font-size: 1rem;
+        font-family:Roboto;
+
        
     
     
