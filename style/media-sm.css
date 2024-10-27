@@ -244,4 +244,18 @@ body{
         max-width: 200px;
         margin: 0 auto;
     }
+
+    .room-inner img{
+        width: 98%;
+        height: 300px;
+        
+    
+    }
+    .footer-inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1vw;
+        text-align: center;
+    }
 }

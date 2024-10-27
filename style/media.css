@@ -123,9 +123,27 @@
         width: 200px;
         margin: 20px auto 10px auto;
     }
-    .price-header h2{
+    .price-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3px;
         text-align: center;
-        width: 99%;
+    
+    }
+    .star{
+        position: static;
+        width: 30px;
+        left: -75px;
+        opacity: 0.5;
+    }
+    .star2{
+        position: static;
+        width: 30px;
+        left: -65px;
+        opacity: 0.5;
+        top: 70px;
     }
     .stariki2{
         width: 200px;
@@ -146,6 +164,71 @@
        
     
     
+    }
+
+    .ecscurs{
+        overflow: hidden;
+        position: static;
+        height: auto;
+        
+        padding: 30px 0 0 0;
+        margin-top: 40px;
+        text-align: center;
+    }
+    .ecscurs h2{
+        font-size: 24px;
+    }
+    .stariki{
+        width: 200px;
+        position: static;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto;
+        display: block;
+    }
+    .ecs-welcom{
+        max-width: 300px;
+        margin: 0 auto;
+        font-size: 16px;
+        font-family: "Montserrat";
+        padding-top: 15px;
+    }
+    
+    .ecs-tel {
+        padding-top: 20px;
+    }
+    .ecs-tel a{
+        display: block;
+        color: #edd6cf;;
+        text-decoration: none;
+        padding-top: 15px;
+        font-family: 'Caveat';
+        font-size: 30px;
+        font-weight: 900;
+        
+    }
+    
+    .ecs-welcom span{
+        display: block;
+        font-size: 20px;
+        padding-top: 20px;
+        text-align: center;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    .room-inner img{
+        width: 48%;
+        height: 300px;
+        
+    
+    }
+    .footer-inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1vw;
+        text-align: center;
     }
 
 }
