@@ -9,6 +9,27 @@
     .menu-main{
         display: none;
     }
+    .menuvizibl{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap: 15px;
+
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(var(--color-oliva),rgba(255, 255, 255, 0.918));
+        z-index: 2000;
+        /* color: var(--color-beg); */
+        color: #3b4038;
+        padding-top: 40px;       
+        text-align: center;
+    
+        
+    }
     .header-nav{
         order: 0;
     }
@@ -18,8 +39,35 @@
     .header-promo{
         order: 2;
     }
+    
     .burger{
         display: block;
+        
+    }
+    .burger span,.burger span::before,.burger span::after{
+        background:  #425238;
+
+    }
+    .burgerclose{
+        position: fixed;
+        z-index: 3000;
+        border: 1px solid #425238;
+        right: 20px;
+        top: 20px;
+    }
+    .burgerclose span{
+        height: 0;
+    }
+
+    .burgerclose span::before{
+        transform: rotate(45deg);
+        top: 0;
+        transition: 0.5s;
+    }
+    .burgerclose span::after{
+        transform: rotate(-45deg);
+        top: 0;
+        transition: 0.5s;
     }
     .servis-item{
         flex: 1 1 45%;
@@ -223,12 +271,45 @@
         
     
     }
+    .footer-logo img{
+        width: 80px;
+    }
     .footer-inner{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         gap: 1vw;
         text-align: center;
+        align-items: center;
     }
-
+    .footer-contact{
+        text-align: left;
+    }
+    .contacts-adres{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        margin-top: 50px;
+        
+    }
+    .adres-description, .adres-map{
+        width: 100%;
+        height: 300px;
+    }
+    .adres-description-headr{
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-around;
+        font-size: 1rem;
+        height: auto;
+    }
+    .adres-description{
+        padding: 20px 10px 10px 10px;
+       
+    }
+    .adres-description-img img{
+        height: 200px;
+    }
+   
 }

@@ -233,7 +233,14 @@ body{
         font-family: 'Caveat';
         font-size: 30px;
         font-weight: 900;
+
         
+    }
+    .ecs-tel a:hover{
+        transform: scale(1.2);
+    transition: 1s;
+    box-shadow: inset 0 0 8px 2px rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
     }
     
     .ecs-welcom span{
@@ -251,11 +258,40 @@ body{
         
     
     }
+    .footer-logo img{
+        width: 80px;
+    }
     .footer-inner{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         gap: 1vw;
         text-align: center;
+    }
+    .footer-menu{
+        margin: 20px 0 ;
+        padding: 10px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.68);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.68);
+    }
+
+
+    .profail{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        margin-top: 20px;
+        flex: 1 1 500px;
+    
+    }
+    .about-document{
+        padding: 16px 20px;
+        transition: 1s ease-in;
+        box-shadow: 0 3px 13px 0 rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+
     }
 }

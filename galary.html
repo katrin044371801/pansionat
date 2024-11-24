@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>мир добра</title>
+    <link rel="stylesheet" href="./fontawesome-free-6.6.0-web/css/all.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" media="only screen and (max-width:768px)" href="./style/media.css">
+    <link rel="stylesheet" media="only screen and (max-width:520px)" href="./style/media-sm.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header-top">
+            <div class="container">
+                <div class="nav-top">
+                    <div class="logo">
+                        <img class="logotip-img" src="./img/logo-chench.png" alt="">
+
+                    </div>
+                    <div class="adres">
+                        <h3 class="adres-header"> 
+                            <!-- <img class="icon" src="img/loco.png" height="23px" alt=""> -->
+                            г.Ростов-на-Дону</h3>
+                        <ul class="adres-lict">
+                            <li class="adres-item"><a href="">пер.Стандартный,2/31</a></li>
+                            <li  class="adres-item"><a href="">ул.Бодрая, 15</a></li>
+                            <li  class="adres-item"><a href="">ул.Лесозащитная, 122</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="fone">
+                        <ul class="fone-list">
+                            <li class="fone-coll"><a href="tel:+79188537116">
+                                 <!-- <img class="icon" src="img/fone.png" height="23px" alt=""> -->
+                                 +7(918) 853-71-16</a></li>
+                            <li class="fone-time"> 
+                                <!-- <img class="icon" src="img/vremy.png" alt=""> -->
+                                пн-вс (круглосуточно)</li>
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>  
+        </nav>
+        <nav class="header-nav">
+            <div class="container">
+                <div class="nav-main">
+                    <div class="burger" id="burger">
+                        <span></span>
+                    </div>
+                    <ul class="menu-main" id="menumain">
+                        <li><a href="./index.html">Главная</a></li>
+                        <li><a href="./about.html">О нас</a></li>
+                        <li><a href="./sevis.html">Услуги и цены</a></li>                       
+                        <li><a href="./galary.html">Галлерея</a></li>
+                        <li><a href="./contact.html">Адреса</a></li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="header-promo">
+            <h1>МИР ДОБРА</h1>
+            <h2>Пансионат для пожилых людей</h2>
+            <p>Центр обслуживания людей с деменцией</p>
+            <button class="btn">
+                Подробнее
+            </button>
+        </div>
+    </header>
+    <main> 
+        <section class="servis" id="servis">
+            <div class="container">
+
+            </div>
+        </section>
+        
+       
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-logo">
+                    <img src="img/logo-chench.png" alt="">
+                    <h2>Мир Добра</h2>
+                    <p>Пансионат для пожилых людей</p>
+                </div>
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href="./index.html">Главная</a></li>
+                        <li><a href="./about.html">О нас</a></li>
+                        <li><a href="./sevis.html">Услуги и цены</a></li>                       
+                        <li><a href="./galary.html">Галлерея</a></li>
+                        <li><a href="./contact.html">Адреса</a></li>
+                        <li><a href="">Статьи</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <p><img class="icon" src="./img/loco.png" height="23px" alt="">Пер. Стандартный 2/31</p>                    
+                    <p><img class="icon" src="./img/loco.png" height="23px" alt="">Ул. Лесозащитная, 122</p>
+                    <p><img class="icon" src="./img/loco.png" height="23px" alt="">Ул. Бодрая, 15</p>
+                    <br>
+                    <p class="fone-coll"><img class="icon" src="./img/tel.png" height="23px" alt=""><a href="tel:+79188537116">                             
+                        +7(918) 853-71-16</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-map"></div>
+            
+        </div> 
+        <div class="footer-inner footer-inner-booton">
+
+            <div class="footer-copy">
+                &copy;2024год, Все права защищены. Сайт пренадлежит ИП Свирская Е.Н.
+            </div>
+            
+        </div>
+    </footer>
+
+
+
+    <script>
+        burger.addEventListener('click', function() {
+            menumain.classList.toggle('menuvizibl');
+            burger.classList.toggle("burgerclose")
+        })
+        const links = document.querySelectorAll('#menumain a');
+    links.forEach(link => link.addEventListener('click',()=>{
+        menumain.classList.remove('menuvizibl');
+        burger.classList.remove('burgerclose');
+    }));
+
+    </script>
+
+</body>
+</html>
